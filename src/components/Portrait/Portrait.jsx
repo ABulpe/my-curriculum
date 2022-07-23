@@ -52,4 +52,6 @@ const H2 = styled.h2`
     font-size: 22px
 `
 
+
+
 export default Portrait;

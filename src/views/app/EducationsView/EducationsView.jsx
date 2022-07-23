@@ -14,7 +14,7 @@ const EducationsView = () =>{
 const Main = styled.main`
     display: flex;
     justify-content:center;
-    height: 100%;
+    height: 70vh;
     width: 100%;
     align-items: center;
     background-color: #f0f0f0;

@@ -31,7 +31,6 @@ const About = () =>{
                 <Info>
                     <P><Span>Second Language: </Span>{personalInfo.SecondLanguage}</P>
                 </Info>
-               
             </PersonalInfo>
         </Card>
     );
@@ -48,7 +47,7 @@ const Card = styled.div`
     background-color: white;
     box-shadow: 3px 3px 10px grey;
     padding: 20px;
-    min-height: 33vh;
+   
     
 `
 const AboutMe = styled.section`

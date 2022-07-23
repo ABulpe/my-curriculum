@@ -9,7 +9,7 @@ const Header = () => {
 
 return (
     <StyledHeader>
-        <Title>FullStack Developer CV</Title>
+        <NavLink to="/" className={"navlink"}><Title>FullStack Developer CV</Title></NavLink>
         <Nav>
             <Ul>
                 <Li><FaHome/><NavLink to="/" className={"navlink"}>Home</NavLink></Li>

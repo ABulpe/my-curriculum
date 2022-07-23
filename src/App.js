@@ -20,9 +20,9 @@ const App = () => {
   return (
     <>
       <Header/>
-      <Routes>
-          {routes}
-      </Routes>
+        <Routes>
+            {routes}
+        </Routes>
     </>
   );
 }
