@@ -21,7 +21,7 @@ return (
 
 const StyledHeader = styled.header`
     width: 100%;
-    height: 15vh;
+    height: 10vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -59,6 +59,7 @@ const Li = styled.li`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-size: 18px;
 `
 
 

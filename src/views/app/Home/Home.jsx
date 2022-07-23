@@ -1,5 +1,8 @@
 import styled from "styled-components"
 import Portrait from "../../../components/Portrait/Portrait"
+import About from "../../../components/About/About"
+import ProfessionalSkills from "../../../components/Skills/Skills"
+
 const Home = () => {
 
     return(
@@ -8,7 +11,10 @@ const Home = () => {
            <Section className="portrait">
                 <Portrait/>
             </Section> 
-           <Section></Section>
+           <Section>
+                <About/>
+                <ProfessionalSkills/>
+           </Section>
         </Main>
 
     )
@@ -22,15 +28,19 @@ const Main = styled.main`
     height: fit-content;
     width: 100%;
     min-height: 100%;
+    background-color: #f0f0f0;
 `
 
 const Section = styled.section`
+    margin: 20px;
     display: flex;
     width: 65%;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     &.portrait{
         width: 35%;
+        align-items: flex-end;
+        
     }
 `
 
