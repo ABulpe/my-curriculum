@@ -2,6 +2,7 @@ import styled from "styled-components"
 import Portrait from "../../../components/Portrait/Portrait"
 import About from "../../../components/About/About"
 import ProfessionalSkills from "../../../components/Skills/Skills"
+import Experience from "../../../components/Experience/Experience"
 
 const Home = () => {
 
@@ -14,6 +15,7 @@ const Home = () => {
            <Section>
                 <About/>
                 <ProfessionalSkills/>
+                <Experience/>
            </Section>
         </Main>
 

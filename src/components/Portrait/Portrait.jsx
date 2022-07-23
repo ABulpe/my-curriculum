@@ -2,11 +2,11 @@ import styled from "styled-components"
 
 
 const Portrait = () =>{
-
+    let img = "/storage/img/me2.jpeg"
     return (
         <>
             <Card>
-                <Img/>
+                <Img src={img} alt="Profile Image"/>
                 <TextImg>
                     <H2>Alberto Bulpe Martinez</H2>
                     <P>Full Stack Web Developer</P>
@@ -21,16 +21,19 @@ const Portrait = () =>{
 const Card = styled.div`
     display: flex;
     flex-direction: column;
-    height: 40vh;
-    width: 60%;
+    height: fit-content;
+    width: 55%;
     background-color: white;
     box-shadow: 3px 3px 10px grey;
+    min-height: 45vh;
 
 `
 
 const Img = styled.img`
     height: 70%;
     width: 100%;
+    object-fit: cover;
+    object-position: top;
 `
 
 const TextImg = styled.div`

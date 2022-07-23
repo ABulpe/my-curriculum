@@ -58,8 +58,13 @@ const Li = styled.li`
     cursor: pointer;
     display: flex;
     align-items: center;
+    font-size 18px;
     justify-content: space-between;
     font-size: 18px;
+    &:hover {
+       border-bottom: 1px solid;
+        
+    }
 `
 
 

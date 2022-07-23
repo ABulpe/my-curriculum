@@ -43,11 +43,12 @@ const Card = styled.div`
     margin: 3px 0 20px 0;
     display: flex;
     flex-direction: column;
-    height: 33vh;
+    height: fit-content;
     width: 80%;
     background-color: white;
     box-shadow: 3px 3px 10px grey;
-    padding: 15px;
+    padding: 20px;
+    min-height: 33vh;
     
 `
 const AboutMe = styled.section`
