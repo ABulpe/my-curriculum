@@ -89,7 +89,7 @@ const Card = styled.div`
     background-color: white;
     box-shadow: 3px 3px 10px grey;
     padding: 20px;
-    min-height: 46Dvh;
+    min-height: 46vh;
     
 `
 

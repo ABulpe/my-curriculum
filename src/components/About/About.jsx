@@ -26,10 +26,10 @@ const About = () =>{
                 </Info>
                 <Info>
                     <P><Span>Phone: </Span> {personalInfo.Phone}</P>
-                    <P><Span>Main Languaje: </Span>{personalInfo.MainLanguage}</P>
+                    <P><Span>Main Language: </Span>{personalInfo.MainLanguage}</P>
                 </Info>
                 <Info>
-                    <P><Span>Second Languaje: </Span>{personalInfo.SecondLanguage}</P>
+                    <P><Span>Second Language: </Span>{personalInfo.SecondLanguage}</P>
                 </Info>
                
             </PersonalInfo>

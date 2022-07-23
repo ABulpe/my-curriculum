@@ -3,6 +3,7 @@ import Portrait from "../../../components/Portrait/Portrait"
 import About from "../../../components/About/About"
 import ProfessionalSkills from "../../../components/Skills/Skills"
 import Experience from "../../../components/Experience/Experience"
+import Educations from "../../../components/Eduactions/Educations"
 
 const Home = () => {
 
@@ -16,6 +17,7 @@ const Home = () => {
                 <About/>
                 <ProfessionalSkills/>
                 <Experience/>
+                <Educations/>
            </Section>
         </Main>
 
