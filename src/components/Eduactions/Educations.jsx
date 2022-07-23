@@ -1,8 +1,11 @@
 import styled from "styled-components"
-
+import Modal from "../../components/Modal/Modal"
+import React, {useState} from "react"
 
 const Educations = () =>{
     
+    const [modalState, setModalState] = useState(false)
+    const [image, setImage] = useState("")
     return(
         <Card>
             <Title>
@@ -18,22 +21,35 @@ const Educations = () =>{
                 <Tr>
                     <Td>Técnico Superior en Desarrollo de Aplicaciones Web</Td>
                     <Td>2020-2022</Td>
-                    <Td><Button onClick={()=> alert("hola mundo")}>View</Button></Td>
+                    <Td><Button onClick={() => {
+                        setModalState(true)
+                        setImage("/storage/img/notas.jpeg")
+                    }
+                    }>View</Button></Td>
                 </Tr>
                 <Tr>
-                    <Td>Técnico Superior en Desarrollo de Aplicaciones Web</Td>
-                    <Td>2020-2022</Td>
-                    <Td><Button>View</Button></Td>
+                    <Td>Curso de Docker para desarrolladores</Td>
+                    <Td>Abril 2022</Td>
+                    <Td><Button onClick={() => {
+                        setModalState(true)
+                        setImage("/storage/img/docker.jpeg")
+                    }
+                    }>View</Button></Td>
                 </Tr>
-                <Tr>
-                    <Td>Técnico Superior en Desarrollo de Aplicaciones Web</Td>
-                    <Td>2020-2022</Td>
-                    <Td><Button>View</Button></Td>
-                </Tr>
+        
 
             </Tbody>
-
         </Table>
+        <Modal
+            title={"Certificate"}
+            state={modalState}
+            changeState= {setModalState}
+            showHeader = {false}
+            showOverlay={true}
+            modalPosition={"center"}
+        >
+            <Img src={image} />
+        </Modal>
         </Card>
     )
 
@@ -122,11 +138,14 @@ const Button = styled.button`
     background-color: white;
     color: #69b1ff;
    }
-
-
-   
-
-    
 `
+
+const Img = styled.img`
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+`
+
 
 export default Educations;
