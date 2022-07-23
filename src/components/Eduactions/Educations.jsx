@@ -36,7 +36,15 @@ const Educations = () =>{
                     }
                     }>View</Button></Td>
                 </Tr>
-        
+                <Tr>
+                    <Td>Udemy: React-Guía definitiva: hooks router redux next</Td>
+                    <Td>Julio 2022</Td>
+                    <Td><Button onClick={() => {
+                        setModalState(true)
+                        setImage("/storage/img/reactCurso.jpg")
+                    }
+                    }>View</Button></Td>
+                </Tr>
 
             </Tbody>
         </Table>
