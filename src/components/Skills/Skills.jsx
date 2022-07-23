@@ -89,7 +89,7 @@ const Card = styled.div`
     background-color: white;
     box-shadow: 3px 3px 10px grey;
     padding: 20px;
-    min-height: 42vh;
+    min-height: 46Dvh;
     
 `
 
@@ -123,6 +123,7 @@ const Skill = styled.div`
     align-items: flex-start;
     width: 50%;
     height: 100%
+    padding: 10px;
     
     
     
@@ -130,7 +131,7 @@ const Skill = styled.div`
 
 const Range = styled.progress`
     width: 80%;
-    height: 15%;
+    height: 1vh;
     margin: 5px 0 0 0;
     border-radius: 30px;
     border: 1px solid black;
