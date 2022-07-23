@@ -42,7 +42,7 @@ const ModalOverlay = styled.div`
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: ${props => props.mostrarOverlay ? 'rgba(0,0,0,0.5)' : 'rgba(0,0,0,0)'};
+    background-color: ${props => props.showOverlay ? 'rgba(0,0,0,0.5)' : 'rgba(0,0,0,0)'};
     padding: 40px;
     display: flex;
     align-items: ${props => props.posicionModal ? props.posicionModal : 'center' };
