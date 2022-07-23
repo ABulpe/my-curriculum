@@ -1,17 +1,21 @@
 import styled from "styled-components"
 import {FaHome, FaCopy, FaIdCard, FaUserGraduate} from "react-icons/fa"
+import {Link, NavLink, useLocation} from 'react-router-dom'
 
 const Header = () => {
+ const location = useLocation();
+
+
 
 return (
     <StyledHeader>
         <Title>FullStack Developer CV</Title>
         <Nav>
             <Ul>
-                <Li><FaHome/>Home</Li>
-                <Li><FaCopy/>Skills</Li>
-                <Li><FaIdCard/>Experiences</Li>
-                <Li><FaUserGraduate/>Educations</Li>
+                <Li><FaHome/><NavLink to="/" className={"navlink"}>Home</NavLink></Li>
+                <Li><FaCopy/><NavLink to="/Skills" className={"navlink"}>Skills</NavLink></Li>
+                <Li><FaIdCard/><NavLink to="/Experience" className={"navlink"}>Experiences</NavLink></Li>
+                <Li><FaUserGraduate/><NavLink to="/Educations" className={"navlink"}>Educations</NavLink></Li>
             </Ul>
         </Nav>
     </StyledHeader>
