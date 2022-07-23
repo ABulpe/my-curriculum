@@ -1,10 +1,39 @@
 import styled from "styled-components"
 
-const Educations = () =>{
 
+const Educations = () =>{
+    
     return(
         <Card>
-            
+            <Title>
+                Educations
+            </Title>
+            <Table>
+            <Thead>
+                <Th>CERTIFICATE</Th>
+                <Th>DATE</Th>
+                <Th>SHOW</Th>
+            </Thead>
+            <Tbody>
+                <Tr>
+                    <Td>Técnico Superior en Desarrollo de Aplicaciones Web</Td>
+                    <Td>2020-2022</Td>
+                    <Td><Button onClick={()=> alert("hola mundo")}>View</Button></Td>
+                </Tr>
+                <Tr>
+                    <Td>Técnico Superior en Desarrollo de Aplicaciones Web</Td>
+                    <Td>2020-2022</Td>
+                    <Td><Button>View</Button></Td>
+                </Tr>
+                <Tr>
+                    <Td>Técnico Superior en Desarrollo de Aplicaciones Web</Td>
+                    <Td>2020-2022</Td>
+                    <Td><Button>View</Button></Td>
+                </Tr>
+
+            </Tbody>
+
+        </Table>
         </Card>
     )
 
@@ -19,7 +48,84 @@ const Card = styled.div`
     background-color: white;
     box-shadow: 3px 3px 10px grey;
     padding: 20px;
-    min-height: 46vh;
+    min-height: 40vh;
+    
+`
+
+const Title = styled.h2`
+    font-size: 20px;
+    margin: 0 0 5px 0;
+    &.subtitle{
+        font-size: 18px;
+        color: grey;
+    }
+
+`
+
+const Table = styled.table`
+   border-collapse: collapse;
+   width: 100%;
+   font-family: Arial, Helvetica, sans-serif;
+   margin: 10px 0 0 0;
+`
+
+const Tbody = styled.tbody`
+
+`
+
+const Thead = styled.thead`
+
+   
+   
+`
+const Th = styled.th`
+    padding: 8px;
+    text-align: left;
+    font-size: 18px;
+   
+`
+
+const Tr = styled.tr`
+    &:hover{
+        background-color: #ddd;
+    }
+    &:nth-child(odd){
+        background-color: #f2f2f2;
+        &:hover{
+            background-color: #ddd;
+        }
+    }
+
+`
+
+const Td = styled.td`
+    border: none;
+    padding: 8px;
+    height: 5vh;
+    font-weight: 600;
+    font-size: 16px; 
+ 
+   
+`
+const Button = styled.button`
+    background-color: #69b1ff;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    height: 3vh;
+    padding: 5px;
+    cursor: pointer;
+    width: 70%;
+    border: 1px solid #69b1ff;
+   &:hover{
+    background-color: white;
+    color: #69b1ff;
+   }
+
+
+   
+
     
 `
 
