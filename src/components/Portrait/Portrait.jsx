@@ -33,7 +33,6 @@ const Card = styled.div`
 
     @media (max-width: 690px){
         width: 100%;
-       
     }
 
 `
@@ -52,6 +51,11 @@ const TextImg = styled.div`
     align-items: center;
     height:30%;
     flex-direction: column;
+    @media (max-width: 690px){
+        width: 100%;
+        margin-top: 15px;
+    }
+
 
 `
 const P = styled.p`

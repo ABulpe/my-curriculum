@@ -146,6 +146,10 @@ const Button = styled.button`
     background-color: white;
     color: #69b1ff;
    }
+   @media (max-width: 690px){
+    width: 100%;
+    margin-top: 15px;
+}
 `
 
 const Img = styled.img`
@@ -153,6 +157,7 @@ const Img = styled.img`
     width: 100%;
     object-fit: cover;
     object-position: top;
+  
 `
 
 

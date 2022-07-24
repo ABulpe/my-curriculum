@@ -79,7 +79,6 @@ const BotonCerrar = styled.button`
 `
 const Container = styled.div`
 
-    // margin: 5vh 0;
     width: 30%;
     min-height: 100px;
     background-color: #fff;
@@ -87,7 +86,12 @@ const Container = styled.div`
     border-radius: 0.5em;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding: 20px ;
-    // z-index: 5000;
+    @media (max-width: 690px){
+        width: 80%;
+        margin: 0 50px 0 0;
+        
+    }
+  
 
 `
 const EncabezadoModal = styled.div`

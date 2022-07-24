@@ -80,20 +80,22 @@ const Container = styled.div`
 `
 const MyExperience = styled.div`
     display: flex;
+    width: 100%;
     flex-direction: column;
     margin: 0 0 0 30px;
-    height: 17vh;
+    height: fit-content;
     justify-content: flex-end;
 
-
-    
 `
 const Divider = styled.div`
     background-color: red;
     height: 14vh;
     width: 0.5vh;
     border-radius: 10px;
-   
+    @media (max-width: 690px){
+       height: 25vh;
+        
+    }
 `
 
 const Date = styled.h2`
@@ -103,6 +105,9 @@ const Date = styled.h2`
     font-size: 18px;
     height: fit-content;
     width: 30%;
+    @media (max-width: 690px){
+       padding: 5px;
+    }
 `
 
 export default Experience;
