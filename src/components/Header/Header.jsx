@@ -54,10 +54,10 @@ return (
         </StyledHeader>
         <Nav className="responsive-nav"> 
             <Ul className="responsive-ul">
-                <Li className="responsive-li"><FaHome/><NavLink to="/" className={"navlink-responsive"}>Home</NavLink></Li >
-                <Li className="responsive-li"><FaCopy/><NavLink to="/Skills" className={"navlink-responsive"}>Skills</NavLink></Li >
-                <Li className="responsive-li"><FaIdCard/><NavLink to="/Experience" className={"navlink-responsive"}>Experiences</NavLink></Li >
-                <Li className="responsive-li"><FaUserGraduate/><NavLink to="/Educations" className={"navlink-responsive"}>Educations</NavLink></Li>
+                <Li className="responsive-li"><NavLink to="/" className={"navlink-responsive"} onClick={()=>closeMenu()}><FaHome/><Span>Home</Span></NavLink></Li >
+                <Li className="responsive-li"><NavLink to="/Skills" className={"navlink-responsive"} onClick={()=>closeMenu()}><FaCopy/><Span>Skills</Span></NavLink></Li >
+                <Li className="responsive-li"><NavLink to="/Experience" className={"navlink-responsive"} onClick={()=>closeMenu()}><FaIdCard/><Span>Experience</Span></NavLink></Li >
+                <Li className="responsive-li"><NavLink to="/Educations" className={"navlink-responsive"} onClick={()=>closeMenu()}><FaUserGraduate/><Span>Educations</Span></NavLink></Li>
             </Ul>
             </Nav>
         <Container 
@@ -85,7 +85,7 @@ const StyledHeader = styled.header`
 const Title = styled.h1`
     color: white;
     font-size: 26px;
-    @media (max-width: 690px){
+    @media (max-width: 860px){
         font-size: 20px;
     }
 `
@@ -96,7 +96,7 @@ const Nav = styled.nav`
     height:100%;
     display: flex;
     align-items: center;
-    @media (max-width: 690px){
+    @media (max-width: 860px){
         display: none;
     }
     &.responsive-nav{
@@ -141,7 +141,7 @@ const Li = styled.li`
     padding-top: 10px;
     padding-bottom: 10px;
     &:hover {
-       border-bottom: 1px solid;
+       border-bottom: 1px solid blue;
         
     }
     &.responsive-li{
@@ -152,19 +152,27 @@ const Li = styled.li`
         align-items: center;
         &>.navlink-responsive{
             color: white;
-            padding: 10px;
             text-decoration: none;
-            
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            padding: 10px;
         }
         &:hover{
             background-color: white;
             color: #524ff0;
-            width: 100%;
             justify-content: center;
+            align-items: center;
+            
 
             &>.navlink-responsive{
                 color: #524ff0;
                 text-decoration: none;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items:center;
               
             }
            
@@ -185,7 +193,7 @@ const Container = styled.div`
     &.header-responsive--boton {
         display: none;
 
-        @media (max-width: 690px) {
+        @media (max-width: 860px) {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -226,6 +234,10 @@ const Container = styled.div`
         cursor: pointer;
 }
 
+`
+
+const Span = styled.span`
+  
 `
 
 export default Header;

@@ -3,11 +3,11 @@ import styled from "styled-components"
 const ExperienceView = () => {
 
     return(
-        <>  
-            <Main>
-                <Experience/>
-            </Main>
-        </>
+        
+        <Main>
+            <Experience/>
+        </Main>
+        
     )
 
 }
@@ -15,7 +15,7 @@ const ExperienceView = () => {
 const Main = styled.main`
     display: flex;
     justify-content:center;
-    height: 70vh;
+    height: 100%;
     width: 100%;
     align-items: center;
     background-color: #f0f0f0;

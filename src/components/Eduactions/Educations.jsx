@@ -146,7 +146,7 @@ const Button = styled.button`
     background-color: white;
     color: #69b1ff;
    }
-   @media (max-width: 690px){
+   @media (max-width: 860px){
     width: 100%;
     height: fit-content;
     margin-top: 15px;

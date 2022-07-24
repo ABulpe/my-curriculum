@@ -31,7 +31,7 @@ const Card = styled.div`
     box-shadow: 3px 3px 10px grey;
     min-height: 45vh;
 
-    @media (max-width: 690px){
+    @media (max-width: 860px){
         width: 100%;
     }
 
@@ -51,7 +51,7 @@ const TextImg = styled.div`
     align-items: center;
     height:30%;
     flex-direction: column;
-    @media (max-width: 690px){
+    @media (max-width: 860px){
         width: 100%;
         margin-top: 15px;
     }

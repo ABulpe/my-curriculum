@@ -92,7 +92,7 @@ const Divider = styled.div`
     height: 14vh;
     width: 0.5vh;
     border-radius: 10px;
-    @media (max-width: 690px){
+    @media (max-width: 860px){
        height: 25vh;
         
     }
@@ -105,7 +105,7 @@ const Date = styled.h2`
     font-size: 18px;
     height: fit-content;
     width: 30%;
-    @media (max-width: 690px){
+    @media (max-width: 860px){
        padding: 5px;
     }
 `
