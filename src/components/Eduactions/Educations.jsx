@@ -9,7 +9,7 @@ const Educations = () =>{
     return(
         <Card>
             <Title>
-                Educations
+                EDUCATIONS
             </Title>
             <Table>
             <Thead>
