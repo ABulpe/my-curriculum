@@ -4,8 +4,8 @@ const About = () =>{
     
     const description = "Soy un apasionado de la programación. Una de mis mayores motivaciones es aprender. Tengo buenas softskills y me encanta aprender de forma autodidacta."
     const personalInfo = {
-        Addres: "Costa Rica 7 Portal 3 Bajo C",
-        Email: "11519",
+        Addres: "Costa Rica 7 Portal 3 Bajo C 11519",
+        Email: "albertobulpemartinez@gmail.com",
         Phone: "+34 651 999 284",
         MainLanguage: "Spanish",
         SecondLanguage: "English",
