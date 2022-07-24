@@ -54,7 +54,7 @@ const Section = styled.section`
 
         
         @media (max-width: 690px){
-            width: 87%;
+            width: 88%;
             align-items: center;
             
         }
