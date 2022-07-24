@@ -31,6 +31,11 @@ const Card = styled.div`
     box-shadow: 3px 3px 10px grey;
     min-height: 45vh;
 
+    @media (max-width: 690px){
+        width: 100%;
+       
+    }
+
 `
 
 const Img = styled.img`

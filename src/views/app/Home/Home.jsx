@@ -33,6 +33,13 @@ const Main = styled.main`
     width: 100%;
     min-height: 100%;
     background-color: #f0f0f0;
+    @media (max-width: 690px){
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
 `
 
 const Section = styled.section`
@@ -44,6 +51,19 @@ const Section = styled.section`
     &.portrait{
         width: 35%;
         align-items: flex-end;
+
+        
+        @media (max-width: 690px){
+            width: 87%;
+            align-items: center;
+            
+        }
+        
+    }
+
+    @media (max-width: 690px){
+        width: 100%;
+        align-items: center;
         
     }
 `
