@@ -88,7 +88,7 @@ const Container = styled.div`
     padding: 20px ;
     @media (max-width: 690px){
         width: 100%;
-        margin: 0 75px 0 0;
+        margin: 0 auto 0 0;
         
     }
     @media (max-width: 860px){
