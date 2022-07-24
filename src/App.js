@@ -1,4 +1,4 @@
-import {BrowserRouter as Router, Route, Routes} from "react-router-dom"
+import {BrowserRouter as Router, Route, Routes, Navigate} from "react-router-dom"
 import Header from "./components/Header/Header"
 import Home from "./views/app/Home/Home"
 import {mainRoutes} from "./routes/routes"
@@ -22,6 +22,10 @@ const App = () => {
       <Header/>
         <Routes>
             {routes}
+            <Route 
+            path='*' 
+            element={<Navigate to="/" replace/>}
+/>
         </Routes>
     </>
   );
