@@ -140,7 +140,7 @@ const Button = styled.button`
     height: fit-content;
     padding: 5px;
     cursor: pointer;
-    width: 70%;
+    width: fit-content;
     border: 1px solid #69b1ff;
    &:hover{
     background-color: white;
