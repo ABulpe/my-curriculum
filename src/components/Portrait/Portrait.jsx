@@ -3,7 +3,7 @@ import {BsLinkedin, BsFillHeartFill} from "react-icons/bs"
 
 
 const Portrait = () =>{
-    let img = "/storage/img/me3.png"
+    let img = "/storage/img/me.png"
     return (
         <>
             <Card>
