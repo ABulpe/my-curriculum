@@ -33,6 +33,7 @@ const Card = styled.div`
 
     @media (max-width: 860px){
         width: 100%;
+        height: 60vh;
     }
 
 `
@@ -42,6 +43,8 @@ const Img = styled.img`
     width: 100%;
     object-fit: cover;
     object-position: top;
+    border-bottom: 2px solid grey
+
 `
 
 const TextImg = styled.div`
