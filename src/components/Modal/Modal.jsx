@@ -87,8 +87,13 @@ const Container = styled.div`
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding: 20px ;
     @media (max-width: 690px){
+        width: 100%;
+        margin: 0 75px 0 0;
+        
+    }
+    @media (max-width: 860px){
         width: 80%;
-        margin: 0 50px 0 0;
+        
         
     }
   
