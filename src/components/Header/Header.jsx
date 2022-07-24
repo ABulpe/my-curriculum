@@ -40,10 +40,10 @@ return (
             <NavLink to="/" className={"navlink"}><Title>FullStack Developer CV</Title></NavLink>
             <Nav>
                 <Ul>
-                    <Li><FaHome/><NavLink to="/" className={"navlink"}>Home</NavLink></Li>
-                    <Li><FaCopy/><NavLink to="/Skills" className={"navlink"}>Skills</NavLink></Li>
-                    <Li><FaIdCard/><NavLink to="/Experience" className={"navlink"}>Experiences</NavLink></Li>
-                    <Li><FaUserGraduate/><NavLink to="/Educations" className={"navlink"}>Educations</NavLink></Li>
+                    <Li><NavLink to="/" className={"navlink"}><FaHome/><Span>Home</Span></NavLink></Li>
+                    <Li><NavLink to="/Skills" className={"navlink"}><FaCopy/><Span>Skills</Span></NavLink></Li>
+                    <Li><NavLink to="/Experience" className={"navlink"}><FaIdCard/><Span>Experience</Span></NavLink></Li>
+                    <Li><NavLink to="/Educations" className={"navlink"}><FaUserGraduate/><Span>Educations</Span></NavLink></Li>
                 </Ul>
             </Nav>
             <Container className="header-responsive--boton" onClick={()=>toggleMenu()}>
@@ -140,10 +140,38 @@ const Li = styled.li`
     font-size: 18px;
     padding-top: 10px;
     padding-bottom: 10px;
-    &:hover {
-       border-bottom: 1px solid blue;
+    &>.navlink{
+        color: white;
+        text-decoration: none;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                display: flex;
+                width: 100%;
+                height: 1.5px;
+                bottom: 5px;
+                left: 5px;
+                background-color: white;
+                transform: scaleX(0);
+                transition: transform 0.3s ease;
+            }
+            &.active::after {
+                transform: scaleX(1);
+            }
+        &:hover::after {
+            transform: scaleX(1);
+        }
+    }   
+    // &:hover {
+    //    border-bottom: 1px solid white;
+    //    padding: 0;
         
-    }
+    // }
     &.responsive-li{
         display: flex;
         width: 100%;
