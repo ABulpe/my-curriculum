@@ -49,6 +49,13 @@ const ModalOverlay = styled.div`
     justify-content: center;
     z-index: 3000;
     // cursor: pointer;
+    @media (max-width: 860px) {
+        justify-content: center;
+        padding: 0;
+        
+        
+      
+    }
 `
 
 const BotonCerrar = styled.button`
@@ -86,19 +93,9 @@ const Container = styled.div`
     border-radius: 0.5em;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding: 20px ;
-    @media (max-width: 690px){
-        width: 100%;
-        margin: 0 auto 0 0;
-        
-    }
     @media (max-width: 860px){
-        width: 100%;
-        margin: 0 auto 0 0; 
-        
-        
+        width: 70%;
     }
-  
-
 `
 const EncabezadoModal = styled.div`
 
