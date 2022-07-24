@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import {BsLinkedin, BsFillHeartFill} from "react-icons/bs"
 
 
 const Portrait = () =>{
@@ -11,7 +12,10 @@ const Portrait = () =>{
                     <H2>Alberto Bulpe Martinez</H2>
                     <P>Full Stack Web Developer</P>
                 </TextImg>
-                
+                <Container>
+                        <a href="https://www.linkedin.com/in/alberto-bulpe-martinez-23579499/" target={"blank"}><Linkedin/></a>
+                        {/* <Like/> */}
+                </Container>
             </Card>
         </>
     )
@@ -51,7 +55,29 @@ const P = styled.p`
 const H2 = styled.h2`
     font-size: 22px
 `
+const Linkedin = styled(BsLinkedin)`
+    font-size: 30px;
+    color: #0a66c2;
+    margin: 10px;   
+`
+const Like = styled(BsFillHeartFill)`
+    font-size: 30px;
+    color: #0a66c2;
+    &:hover{
+        color: red;
+      
+    }
+    cursor: pointer;
+    
+`
 
-
+const Container = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: fit-content;
+    
+`
 
 export default Portrait;

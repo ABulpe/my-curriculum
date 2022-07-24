@@ -28,3 +28,9 @@ code {
   text-decoration: none;
   padding: 10px;
 }
+
+
+.scroll-desactivado {
+  height: 100%;
+  overflow: hidden;
+}
