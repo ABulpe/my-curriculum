@@ -148,6 +148,7 @@ const Button = styled.button`
    }
    @media (max-width: 690px){
     width: 100%;
+    height: fit-content;
     margin-top: 15px;
 }
 `
